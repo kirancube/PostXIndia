@@ -90,37 +90,6 @@ Existing systems face challenges such as:
 - Confusion Matrix  
 
 ---
-## 🧱 System Architecture
-
-Frontend (Web / Mobile)
-│
-├── AI & ML Services
-│ ├── OCR Engine
-│ ├── Delay Prediction Models
-│ └── NLP Complaint Analyzer
-│
-├── Core Services
-│ ├── Parcel Tracking
-│ ├── Complaint Management
-│ ├── Identity Verification
-│ └── E-Post Office
-│
-├── Blockchain Layer
-│ ├── Registered Post Ledger
-│ ├── Smart Contracts
-│ └── Proof of Delivery
-│
-├── Data Layer
-│ ├── Encrypted Databases
-│ └── Analytics Engine
-│
-└── Security & Monitoring
-
-yaml
-Copy code
-
----
-
 ## 🎨 UI Themes
 
 - 🇮🇳 **Bharat Classic** – Patriotic, government-style theme  
