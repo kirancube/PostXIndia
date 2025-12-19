@@ -176,9 +176,3 @@ This project is developed for academic, research, and innovation purposes in ali
 ---
 
 > **PostX India – Delivering Trust, Speed, and Intelligence to Every Address in Bharat 🇮🇳**
-
-
-
-
-
-
