@@ -2,7 +2,8 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Package, Scan, MessageSquare, Route, FileText, UserCheck } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { Package, Scan, MessageSquare, Route, FileText, UserCheck, Sparkles } from "lucide-react"
 import Link from "next/link"
 
 export function QuickActions() {
@@ -13,6 +14,15 @@ export function QuickActions() {
         <CardDescription>Access frequently used features</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-3">
+        <Link href="/dashboard/mail-sorting">
+          <Button className="w-full justify-start bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-md">
+            <Sparkles className="mr-2 h-4 w-4" />
+            AI Mail Sorting
+            <Badge variant="secondary" className="ml-auto">
+              Core Feature
+            </Badge>
+          </Button>
+        </Link>
         <Link href="/dashboard/register-parcel">
           <Button variant="outline" className="w-full justify-start bg-transparent">
             <Package className="mr-2 h-4 w-4" />
