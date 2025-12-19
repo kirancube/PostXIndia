@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
+import { Menu, Sparkles, Info } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Header() {
@@ -14,7 +14,7 @@ export function Header() {
           <Image src="/postx-logo.jpeg" alt="PostX India" width={48} height={48} className="h-12 w-12 object-contain" />
           <div>
             <h1 className="text-xl font-bold text-primary">PostX India</h1>
-            <p className="text-xs text-muted-foreground">Intelligent Postal Services</p>
+            <p className="text-xs text-muted-foreground">AI-Powered Postal Intelligence</p>
           </div>
         </Link>
 
@@ -25,13 +25,27 @@ export function Header() {
           <a href="#tracking" className="text-sm font-medium hover:text-primary transition-colors">
             Track Parcel
           </a>
+          <Link
+            href="/how-it-works"
+            className="text-sm font-medium flex items-center gap-1 hover:text-primary transition-colors"
+          >
+            <Info className="h-3 w-3" />
+            How It Works
+          </Link>
+          <Link
+            href="/dashboard/smart-mail-route"
+            className="text-sm font-medium flex items-center gap-1 text-primary hover:text-primary/80 transition-colors"
+          >
+            <Sparkles className="h-3 w-3" />
+            Smart Mail Route
+          </Link>
           <a
             href="https://quanta-path-setup.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
-            Route Optimizer
+            Quantum Optimizer
           </a>
           <ThemeToggle />
           <Link href="/auth/login">

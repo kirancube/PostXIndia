@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Package, Scan, MessageSquare, Route, FileText, UserCheck, Sparkles } from "lucide-react"
+import { Package, Scan, MessageSquare, Route, FileText, UserCheck, Sparkles, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export function QuickActions() {
@@ -14,13 +14,28 @@ export function QuickActions() {
         <CardDescription>Access frequently used features</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-3">
+        <Link href="/dashboard/smart-mail-route">
+          <Button className="w-full justify-start bg-gradient-to-r from-red-600 to-yellow-500 hover:from-red-700 hover:to-yellow-600 text-white shadow-lg">
+            <Sparkles className="mr-2 h-4 w-4" />
+            Smart Mail Route (AI Pipeline)
+            <Badge variant="secondary" className="ml-auto bg-white text-red-600">
+              NEW
+            </Badge>
+          </Button>
+        </Link>
         <Link href="/dashboard/mail-sorting">
           <Button className="w-full justify-start bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-md">
-            <Sparkles className="mr-2 h-4 w-4" />
+            <Scan className="mr-2 h-4 w-4" />
             AI Mail Sorting
             <Badge variant="secondary" className="ml-auto">
               Core Feature
             </Badge>
+          </Button>
+        </Link>
+        <Link href="/dashboard/post-office-locator">
+          <Button variant="outline" className="w-full justify-start bg-transparent">
+            <MapPin className="mr-2 h-4 w-4" />
+            Post Office Locator
           </Button>
         </Link>
         <Link href="/dashboard/register-parcel">
@@ -44,7 +59,7 @@ export function QuickActions() {
         <a href="https://quanta-path-setup.vercel.app/" target="_blank" rel="noopener noreferrer">
           <Button variant="outline" className="w-full justify-start bg-transparent">
             <Route className="mr-2 h-4 w-4" />
-            Optimize Route
+            Quantum Route Optimizer
           </Button>
         </a>
         <Link href="/dashboard/documents">
